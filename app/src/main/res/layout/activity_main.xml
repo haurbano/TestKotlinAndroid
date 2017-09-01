@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="handler"
+            type="haurbano.movil.restaurant.MainActivity"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="haurbano.movil.restaurant.MainActivity">
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:hint="Message"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="243dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <Button
+            android:text="Send Message"
+            android:onClick="@{()->handler.showAlert()}"
+            android:id="@+id/btn_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>
+
